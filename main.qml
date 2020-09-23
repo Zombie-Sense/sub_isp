@@ -7,7 +7,7 @@ ApplicationWindow {
     width: 640
     height: 480
     title: qsTr("Sample")
-    color: "black"
+    color: gauge1.value < 60 ? "#001142" : "#8e3322"
 
     Telltale{
     }
