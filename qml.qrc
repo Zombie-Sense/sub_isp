@@ -3,5 +3,8 @@
         <file>main.qml</file>
         <file>ValueSource.qml</file>
         <file>SpeedGaugeStyle.qml</file>
+        <file>Telltale.qml</file>
+        <file>images/abs.png</file>
+        <file>images/brake.png</file>
     </qresource>
 </RCC>

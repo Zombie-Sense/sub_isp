@@ -8,6 +8,9 @@ ApplicationWindow {
     height: 480
     title: qsTr("Sample")
 
+    Telltale{
+    }
+
     ValueSource{
     }
 
