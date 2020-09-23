@@ -7,11 +7,15 @@ ApplicationWindow {
     width: 640
     height: 480
     title: qsTr("Sample")
+    color: "black"
 
     Telltale{
     }
+    Winker{
+    }
 
     ValueSource{
+        id: valueSource
     }
 
     CircularGauge{

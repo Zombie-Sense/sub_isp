@@ -6,5 +6,7 @@
         <file>Telltale.qml</file>
         <file>images/abs.png</file>
         <file>images/brake.png</file>
+        <file>Winker.qml</file>
+        <file>images/wink.png</file>
     </qresource>
 </RCC>

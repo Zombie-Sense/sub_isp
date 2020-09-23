@@ -1,9 +1,11 @@
 import QtQuick 2.9
 
 Item {
-    id: valueSource
+    //id: valueSource
     property real kph: 0
     property bool isAccelerated: false
+    property bool isWinkedRight: false
+    property bool isWinkedLeft: false
     focus: true
 
     Timer{
@@ -17,17 +19,29 @@ Item {
 
 // Pressed key_A -> true
     Keys.onPressed: {
-        isAccelerated = true;
         if(event.key === Qt.Key_A){
+            isAccelerated = true;
             accelarate();
+        }
+        if(event.key === Qt.Key_Right){
+            isWinkedRight=true;
+        }
+        if(event.key === Qt.Key_Left){
+            isWinkedLeft=true;
         }
     }
 
 // Released key_A -> false
     Keys.onReleased: {
-        isAccelerated = false;
         if(event.key === Qt.Key_A){
+            isAccelerated = false;
             accelarate();
+        }
+        if(event.key === Qt.Key_Right){
+            isWinkedRight=false
+        }
+        if(event.key === Qt.Key_Left){
+            isWinkedLeft=false
         }
     }
 
